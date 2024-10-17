@@ -29,3 +29,29 @@ nav a{
 nav a:hover{
     color:yellow;
 }
+#halloween_info_links{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.jack_o_lanterns{
+    background-color: black;
+    max-width: 25em;
+    border-radius: 2em;
+    margin: 4em;
+    justify-content: center;
+
+}
+.jack_o_lanterns img{
+    max-width: 25em;
+    border-radius: 2em;
+}
+.jack_o_lanterns p{
+    padding: 1em;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.jack_o_lanterns:hover {
+
+    transform: scale(1.1); /* Expand on hover by 10% */
+  
+  } 
