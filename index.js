@@ -1,8 +1,20 @@
 function trickOrTreat(event) {
     const div = event.target.parentElement.querySelector('div');
-    console.log(div)
-    div.innerHTML = Math.random() > 0.5 ? `<img src="bats.png" alt="tricky bats">`
-        : `<img src="candycorn.png" alt="treat candycorn">`
+    const rnd = Math.random();
+
+    if (rnd < 0.25) {
+        div.innerHTML = `<img src="images/candy.png" alt="treat candy">`;
+    } else if (rnd < 0.5) {
+        div.innerHTML = `<img src="images/insect-silhouettes.png" alt="trick insects">`;
+    } else if (rnd < 0.75) {
+        div.innerHTML = `<img src="images/candycorn.png" alt="treat candycorn">`;
+    } else {
+        div.innerHTML = `<img src="images/bats.png" alt="tricky bats">`;
+    }
+
+    setTimeout(() => {
+        div.innerHTML = ''; 
+    }, 1500);
 }
 
 
@@ -23,5 +35,5 @@ function trickOrTreat(event) {
     }
 
     // Update the countdown every second
-    const timer = setInterval(updateTimer, 1000);
+    setInterval(updateTimer, 1000);
 })();
