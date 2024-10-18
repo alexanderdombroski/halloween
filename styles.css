@@ -163,6 +163,11 @@ footer p {
     #trick-or-treat img {
         right: 10%;
     }
+
+    #time p {
+        text-wrap: wrap;
+        line-height: 100px;
+    }
     
     #halloween_info_links { 
         display: flex;
