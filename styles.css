@@ -16,7 +16,7 @@ header, footer{
     color: black;
 }
 
-header h1, footer p{
+header h1, footer h3{
     font-family: 'halloween_font';
     text-align: center;
     font-size: 5em;
@@ -129,8 +129,13 @@ footer {
     justify-content: space-evenly;
 }
 
-footer p {
+footer h3 {
     margin-bottom: 0;
+}
+
+footer p {
+    text-align: center;
+    margin-left: 20px;
 }
 
 .github:hover {
@@ -165,5 +170,8 @@ footer p {
     }
     .jack_o_lanterns {
         margin: 40px auto;
+    }
+    footer svg {
+        margin-right: 20px;
     }
 }
